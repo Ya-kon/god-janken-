@@ -6,7 +6,7 @@ OpenGL 2DShootingGame
 
 # 2.Coding Environment
 ・Win10(x86) + Visual Studio2017  
-・C++
+・C
 
 # Connect
 ・Twitter: @Ya_konpota
