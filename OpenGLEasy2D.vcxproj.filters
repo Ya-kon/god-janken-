@@ -92,14 +92,14 @@
     <ClInclude Include="Lib\Easy\TweenAnimation.h">
       <Filter>ソース ファイル\Easy</Filter>
     </ClInclude>
-    <ClInclude Include="Command.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="Application.h">
-      <Filter>ソース ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="Lib\Easy\BufferObject.h">
       <Filter>ソース ファイル\Easy</Filter>
+    </ClInclude>
+    <ClInclude Include="Application.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Command.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

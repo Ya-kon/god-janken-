@@ -1,6 +1,9 @@
 #ifndef COMMAND_H_INCLUDED
 #define COMMAND_H_INCLUDED
 
+///////////学校から提供されたライブラリ///////////////////
+
+
 /**
 * 文字を表示する.
 *

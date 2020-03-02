@@ -15,6 +15,8 @@
 #include <stdarg.h>
 #include <algorithm>
 
+///////////ŠwZ‚©‚ç’ñ‹Ÿ‚³‚ê‚½ƒ‰ƒCƒuƒ‰ƒŠ///////////////////
+
 bool hasQuitRequest = false;
 
 namespace /* unnamed */ {
