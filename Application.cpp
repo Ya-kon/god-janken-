@@ -45,13 +45,13 @@ void application()
     if (title_flag) {
         title_flag = false;
         set_image(imageNumber::BACKGROUND, 0, 0, BackGround);  //背景画像を表示
-        set_image(imageNumber::PLAYERIMAGE, 250, -250, "Images/IMG_Player.png");  //プレイヤーの画像を表示
-        set_image(imageNumber::CPUIMAGE, -250, -250, "Images/IMG_CPU.png");  //CPUの画像を表示
+        set_image(imageNumber::PLAYERIMAGE, 270, -270, "Images/IMG_Player.png");  //プレイヤーの画像を表示
+        set_image(imageNumber::CPUIMAGE, -270, -300, "Images/IMG_CPU.png");  //CPUの画像を表示
         set_image(imageNumber::TITLELOGO, 0, 900, "Logos/Logo_GODJANKEN.png");  //   //タイトルロゴ
         move_image(imageNumber::TITLELOGO, 0, 200, 1, 3);  //タイトルロゴを動かす
         play_bgm(BGM_Battle);  //BGM再生
         set_bgm_volume(0.25f);
-        const int yes_or_no = select(0, 0, 2, "じゃんけんをはじめる", "やめる");
+        const int yes_or_no = select(-120, -150, 2, "じゃんけんをはじめる", "やめる");
         play_sound(SE_PushButton);
         reset_image(imageNumber::TITLELOGO);  //タイトルロゴを削除
         if (yes_or_no == 1) {
@@ -60,8 +60,8 @@ void application()
     }
 
     //  １試合ごとに更新
-    set_text(250, 260, "プレイヤー(%d勝)", player_win_count);  //プレイヤーの勝利数を表示
-    set_text(-700, 260, "CPU(%d勝)", cpu_win_count);  //CPUの勝利数を表示
+    set_text(150, -100, "プレイヤー(%d勝)", player_win_count);  //プレイヤーの勝利数を表示
+    set_text(-320, -100, "CPU(%d勝)", cpu_win_count);  //CPUの勝利数を表示
 
     //  プレイヤーの手とCPUの手を選択
     ChooseHand();
@@ -77,8 +77,8 @@ void application()
         }
         else if (!aiko_flag) {
             wait(1.0f); // 3秒間待つ.
-            set_text(-360, -40, "勝負を続けますか？");
-            const int yes_or_no = select(-360, -80, 2, "続ける", "やめる");
+            set_text(-120, -100, "勝負を続けますか？");
+            const int yes_or_no = select(-120, -150, 2, "続ける", "やめる");
             play_sound(SE_PushButton);
 
             // "やめる"が選ばれたらアプリケーションを終了する.
@@ -99,13 +99,13 @@ void application()
 */
 void ChooseHand()
 {
-    set_text(-360, 0, "攻撃を選べ");
+    set_text(-120, -100, "手(攻撃)を選べ");
     // プレイヤーの手を選ぶ。選ばれたのがグーなら0が、チョキなら1が、パーなら2がplayer_handに格納される.
-    int player_hand = select(-360, -40, 3, "グー：爆炎", "チョキ：ハリケーン", "パー：アクア");
+    int player_hand = select(-120, -150, 3, "グー：爆炎", "チョキ：ハリケーン", "パー：アクア");
     play_sound(SE_PushButton);
     reset_all_text();
-    set_text(250, 260, "プレイヤー(%d勝)", player_win_count);  //プレイヤーの勝利数を表示
-    set_text(-700, 260, "CPU(%d勝)", cpu_win_count);  //CPUの勝利数を表示
+    set_text(150, -100, "プレイヤー(%d勝)", player_win_count);  //プレイヤーの勝利数を表示
+    set_text(-320, -100, "CPU(%d勝)", cpu_win_count);  //CPUの勝利数を表示
 
     // CPUの手を選ぶ.
     int cpu_hand = random(0, 2);
