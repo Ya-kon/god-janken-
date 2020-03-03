@@ -16,5 +16,5 @@ OpenGL 2DGame
 ・背景画像→https://k-after.at.webry.info/  
 ・サウンド→https://maoudamashii.jokersounds.com/  
 
-# Connect
+# 4.Connect
 ・Twitter: @Ya_konpota
