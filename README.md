@@ -16,5 +16,12 @@ OpenGL 2DGame
 ・背景画像→https://k-after.at.webry.info/  
 ・サウンド→https://maoudamashii.jokersounds.com/  
 
+# 4.操作方法
+・Enter 移動
+・上キー、下キー 選択肢移動
+
+# 5.説明
+・C言語を学習してから２ヶ月が経った時に制作をしたゲームを少し改良。
+
 # 4.Connect
 ・Twitter: @Ya_konpota
