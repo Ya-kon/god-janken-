@@ -7,7 +7,7 @@ OpenGL 2DShootingGame
 # 2.Coding Environment
 ・Win10(x86)  
 ・Visual Studio2019  
-・C言語
+・C言語  
 ・OpenGL,GLFW,GLEW,GLM
 
 # 3.使用素材
