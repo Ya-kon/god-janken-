@@ -1,5 +1,5 @@
-# 2DJankenGame
-OpenGL 2DShootingGame
+# GODJANKEN!!
+OpenGL 2DGame
 
 # 1.Play
 ![PlayMovie](https://github.com/Ya-kon/GODJANKEN/blob/master/README_Pictures/GODJANKEN_Play.gif)
