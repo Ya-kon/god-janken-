@@ -23,5 +23,5 @@ OpenGL 2DGame
 # 5.説明
 ・C言語を学習してから２ヶ月が経った時に制作をしたゲームを少し改良。
 
-# 4.Connect
+# 6.Connect
 ・Twitter: @Ya_konpota
